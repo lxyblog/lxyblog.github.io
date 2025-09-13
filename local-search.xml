@@ -8,7 +8,7 @@
     <link href="/2025/08/28/tutorial3/"/>
     <url>/2025/08/28/tutorial3/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>之前说过自己会推鸟鸟三部曲的，自然不能食言。</p><p>这几天没有事干，寻思先推一点看看。</p><p>经过肉身难（资源难）和灵力难（下载难）后，我被这至尊小三难的最后一难难住了。</p><p>想必各位也能猜出来，不错，正是【汉化难】。</p><p>下载下来的原版资源没有汉化，这很正常，我也没当回事，直接搜了个汉化补丁打上了。</p><p>结果——乱码。进入游戏一看，不仅标题是乱码，就连文本也是一坨极其抽象根本不可读的片假名，如图。</p><p><img src="https://youke1.picui.cn/s1/2025/08/28/68b03f08309fd.png"title="图一" /></p><p>然后经过一顿乱翻，根据<ahref="https://tieba.baidu.com/p/9446230956#">这个帖子</a>下的评论用十六进制编辑器把iroseka_HD.exe中0002C620行0E列的0x80改为0x86来绕过编码问题。（没错，片假名是编码问题，以下是大佬的解释：本来的exe文件会使用shiftjis编码读取脚本，但汉化版脚本是用gbk编码写的，所以gbk汉字文本用sjis读就会出现假名地狱。需要将exe改为用gbk读取脚本才能解决这个问题。）</p><p>正常启动，正常显示中文。</p><p>暂时好像没有异常了。</p><p>然而正如《大主宰》的原作设定一样，神魄难又分三重，这只是第一重。</p><p>等我过了一点剧情——甚至连序章都只过了一小半——又出事了。</p><p>报错，崩溃。</p><figure><img src="https://youke1.picui.cn/s1/2025/08/28/68b0402d22f52.png"title="图二" alt="图二" /><figcaption aria-hidden="true">图二</figcaption></figure><p>......</p><p>我也是服了。这报错见都没见过......</p><p>于是尝试找老教程，采用Xmoe组的FvpLoader方案。从<ahref="https://github.com/xmoezzz/FVPLoader/releases">Releases ·xmoezzz/FVPLoader ·GitHub</a>下载了0.7-re版本的FvpLoaderGui.exe和FvpKernel.dll复制到游戏目录里，把iroseka_HD.exe拖拽到FvpLoaderGui.exe上，启动。</p><p>结果又他妈变回片假名地狱了。</p><p>我一看不对啊，不是说FvpLoader能让程序按GBK读取吗，这怎么不行呢。</p><p>于是我去重新看了那篇教程和FvpLoader的中文文档，发现教程里的FvpLoader在打开其自身的Gui时左上角有一个option选项。</p><p>但是我又看了看我下载的，左上角只有information选项。</p><p>我当时怀疑了很多方面，甚至怀疑了我的系统是不是装了或者没装什么组件导致和FvpLoader的功能不兼容。</p><p>**的唯独没有怀疑这玩意版本更新能阉割掉这个功能。</p><p>总而言之，走投无路的我想到了更换版本，下载了Release中Ver0.5的FvpLoader并如法炮制。</p><p>成了......</p><p>而且貌似目前没有出现上文图二的报错，似乎是完美解决了。</p><p>这个故事告诉我们，不是所有更新都是向下兼容的。</p><p><span class="heimu"title="你知道的太多了">今天的fp为了满足自己的变态欲望也是竭尽全力呢。</span></p><div class="note note-danger">            <p>看下面！！！</p>          </div><p>二补：结果在一条线的ed处闪退了，还没有Hscene，主播折腾了半天b用没有才不得不承认自己找的这个资源整个就是一坨shit，果断换资源，在<ahref="https://www.touchgal.us/dbabcfd1">这里</a>找到了一个中文版，这次不用折腾了，开箱即用。</p><p>当然，下载略慢，开启魔法手段以后会快很多。</p><p>你要是问为什么在这么糟糕的时间更新，那当然是我从十一点折腾ed闪退和Hscene问题折腾到两点才想起来换资源啦。</p><p><span class="heimu"title="呜呜呜">（我知道我很傻x别骂了别骂了）</span></p><p>就这样吧，今天一天结束了共通线和加奈线，估计开学之前无论如何是不能通关了，剩下按照每周休息一天通一条线的速度来估计要一个月吧。</p><p>晚安。希望明天也是美好的一天。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>之前说过自己会推鸟鸟三部曲的，自然不能食言。</p><p>这几天没有事干，寻思先推一点看看。</p><p>经过肉身难（资源难）和灵力难（下载难）后，我被这至尊小三难的最后一难难住了。</p><p>想必各位也能猜出来，不错，正是【汉化难】。</p><p>下载下来的原版资源没有汉化，这很正常，我也没当回事，直接搜了个汉化补丁打上了。</p><p>结果——乱码。进入游戏一看，不仅标题是乱码，就连文本也是一坨极其抽象根本不可读的片假名，如图。</p><p><img src="/img/img2.png" title="图一" /></p><p>然后经过一顿乱翻，根据<ahref="https://tieba.baidu.com/p/9446230956#">这个帖子</a>下的评论用十六进制编辑器把iroseka_HD.exe中0002C620行0E列的0x80改为0x86来绕过编码问题。（没错，片假名是编码问题，以下是大佬的解释：本来的exe文件会使用shiftjis编码读取脚本，但汉化版脚本是用gbk编码写的，所以gbk汉字文本用sjis读就会出现假名地狱。需要将exe改为用gbk读取脚本才能解决这个问题。）</p><p>正常启动，正常显示中文。</p><p>暂时好像没有异常了。</p><p>然而正如《大主宰》的原作设定一样，神魄难又分三重，这只是第一重。</p><p>等我过了一点剧情——甚至连序章都只过了一小半——又出事了。</p><p>报错，崩溃。</p><figure><img src="/img/img1.png" title="图二" alt="图二" /><figcaption aria-hidden="true">图二</figcaption></figure><p>......</p><p>我也是服了。这报错见都没见过......</p><p>于是尝试找老教程，采用Xmoe组的FvpLoader方案。从<ahref="https://github.com/xmoezzz/FVPLoader/releases">Releases ·xmoezzz/FVPLoader ·GitHub</a>下载了0.7-re版本的FvpLoaderGui.exe和FvpKernel.dll复制到游戏目录里，把iroseka_HD.exe拖拽到FvpLoaderGui.exe上，启动。</p><p>结果又他妈变回片假名地狱了。</p><p>我一看不对啊，不是说FvpLoader能让程序按GBK读取吗，这怎么不行呢。</p><p>于是我去重新看了那篇教程和FvpLoader的中文文档，发现教程里的FvpLoader在打开其自身的Gui时左上角有一个option选项。</p><p>但是我又看了看我下载的，左上角只有information选项。</p><p>我当时怀疑了很多方面，甚至怀疑了我的系统是不是装了或者没装什么组件导致和FvpLoader的功能不兼容。</p><p>**的唯独没有怀疑这玩意版本更新能阉割掉这个功能。</p><p>总而言之，走投无路的我想到了更换版本，下载了Release中Ver0.5的FvpLoader并如法炮制。</p><p>成了......</p><p>而且貌似目前没有出现上文图二的报错，似乎是完美解决了。</p><p>这个故事告诉我们，不是所有更新都是向下兼容的。</p><p><span class="heimu"title="你知道的太多了">今天的fp为了满足自己的变态欲望也是竭尽全力呢。</span></p><div class="note note-danger">            <p>看下面！！！</p>          </div><p>二补：结果在一条线的ed处闪退了，还没有Hscene，主播折腾了半天b用没有才不得不承认自己找的这个资源整个就是一坨shit，果断换资源，在<ahref="https://www.touchgal.us/dbabcfd1">这里</a>找到了一个中文版，这次不用折腾了，开箱即用。</p><p>当然，下载略慢，开启魔法手段以后会快很多。</p><p>你要是问为什么在这么糟糕的时间更新，那当然是我从十一点折腾ed闪退和Hscene问题折腾到两点才想起来换资源啦。</p><p><span class="heimu"title="呜呜呜">（我知道我很傻x别骂了别骂了）</span></p><p>就这样吧，今天一天结束了共通线和加奈线，估计开学之前无论如何是不能通关了，剩下按照每周休息一天通一条线的速度来估计要一个月吧。</p><p>晚安。希望明天也是美好的一天。</p>]]></content>
     
     
     
@@ -159,82 +159,6 @@
       <tag>日记</tag>
       
       <tag>奇思妙想</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>day3</title>
-    <link href="/2023/12/28/day3/"/>
-    <url>/2023/12/28/day3/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>首先说一下，欢迎在我的故事下评论，顺便和我讨论剧情。</p><span id="more"></span><p>今天睡了8小时，最富裕的一集。</p><p>起床后大概用了 5 个小时去构思和创作那个故事，然后学了三小时。</p><p>明天出去和朋友玩，可能要停更，如果玩的比较嗨。</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>日记</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>day2</title>
-    <link href="/2023/12/27/day2/"/>
-    <url>/2023/12/27/day2/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>突然找到了更有意思的事情。</p><p>如果哪天我没有更新标题是<code>dayX</code>的日记，就是去写那篇《关于我从零开始修炼魔导术的事》了。</p><span id="more"></span><p>今天就是这样。</p><p><code>&lt;del&gt;</code>我会在那篇文章的最开头留下更新日志。<code>&lt;/del&gt;</code></p><blockquote><p>有碍观瞻，已经删了。</p></blockquote>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>日记</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>day1</title>
-    <link href="/2023/12/26/day1/"/>
-    <url>/2023/12/26/day1/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>暂且把今天当作 day1 吧。</p><span id="more"></span><p>回家的时候赶上勋望放学，沿溯阻绝。干等半个小时。</p><p>到家四点半了。</p><p>到现在才过去 3 小时，哥们却险些死于电子阳痿。</p><p>群里冷冷清清的：群友要么忙于工作，要么忙于学业。</p><p>我百无聊赖地刷b站，想要找到些许慰藉。</p><p>就在这时我找到了慰藉。</p><p>音乐。</p><p>正如我所说的，哥们的歌单都是靡靡之音：</p>        <div id="aplayer-teFgmOhG" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>  <script>  var options = {"narrow":false,"autoplay":false,"showlrc":3,"theme":"#3b444e","mode":"random","music":[{"title":"ぱられループ を歌ってみた (**平行的轮回**parallel loop) (Jeku remix)","author":"Jeku/aori","url":"https://dlink.host/musics/aHR0cHM6Ly9vbmVkcnYtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvc3Rvcl9vbmVkcnZfb25taWNyb3NvZnRfY29tL0VYbk8tRGpoQ1BkSnZOTFRSaVpiZUpzQkdaY3JzQ2F2eGtjV2JnZFR0eHpOcEE.mp3","pic":"https://p1.music.126.net/d0wC3QrLl6hQPOMxIXFZBg==/109951169011778614.jpg","lrc":"data:application/octet-stream;base64,WzAwOjAwLjAwMF0g5L2c5puyIDogSmVrdS9rb3Vub3RvcmlzYW4KWzAwOjAxLjM2N13npZ7mp5jjga/jgY3jgaPjgajjgIDjgavjgZLjgaDjgZfjgabjgZfjgb7jgaPjgZ/jga4KWzAwOjA4LjE0M13jgrfjg4Pjg53jgpLjgb7jgYTjgaYg44K544K/44Kz44Op44K144OD44K1ClswMDoxNS44Njdd44GC44Gf44GX44Gv44GN44Gj44Go44CA6LiP44G/5aSW44GX44Gm44GX44G+44Gj44Gf44GuClswMDoyMi40NjNd5aSp5Zu944Gu6ZqO5q6144Go44CA44GZ44Gm44GN44Gq44Oq44K644OgClswMDoyOS42MDhd44Gg44GL44KJ44CA44GT44GG44GX44GmClswMDozMy4xMzBd5b6F44Gj44Gm44KL44GuClswMDozNC4xODFd44Gx44KJ44KM44KL44CA6L+344GI44KL5a2Q576K44GoClswMDozNy41MDFd5ZiY44Gk44GN44Kq44Kq44Kr44Of44GM44CA6LiK44KL44Ov44Or44OEClswMDo0MS4yMzJd44Gx44KJ44KM44KL44CA5oCv44GI44KL5rqA5pyI44GoClswMDo0NC42NjNd6Jma44KN44Gq5pyd5pel44CA55uu44GM55yp44KA44KPClswMDo0OC43OTFd44Gx44KJ44KM44KL44CA6L+344GI44KL5a2Q576K44GoClswMDo1Mi4xNTBd5ZiY44Gk44GN44Kq44Kq44Kr44Of44GM44CA6LiK44KL44Ov44Or44OEClswMDo1Ni4xOTJd44Gx44KJ44KM44KL44CA5oCv44GI44KL5rqA5pyI44GoClswMDo1OS42MzBd6Jma44KN44Gq5pyd5pel44CA55uu44GM55yp44KA44KPClswMTowMy44NDFd44Gx44KJ44KM44KL44CA6L+344GI44KL5a2Q576K44GoClswMTowNy4xOTJd5ZiY44Gk44GN44Kq44Kq44Kr44Of44GM44CA6LiK44KL44Ov44Or44OEClswMToxMC44OTRd44Gx44KJ44KM44KL44CA5oCv44GI44KL5rqA5pyI44GoClswMToxNC4zOThd6Jma44KN44Gq5pyd5pel44CA55uu44GM55yp44KA44KPClswMTo0OC44MjVd56We5qeY44Gv44GN44Gj44Go44CA6YCD44GS5Ye644GX44Gm44GX44G+44Gj44Gf44GuClswMTo1NC45NDdd6YCU5pa544Gr44GP44KM44Gm44CA44K544K/44Kz44Op44K144OD44K1ClswMjowMi45ODJd44GC44Gf44GX44Gv44GN44Gj44Go44CA5Zua44KP44KM44Gm44GX44G+44Gj44Gf44GuClswMjowOS42NDFd57WC44KP44KJ44Gq44GE5aSi44Gu5Lit44CA6Lyq5bu744Gu44Ov44Or44OEClswMjoxOC4wMzZd44Gx44KJ44KM44KL44CA6L+344GI44KL5a2Q576K44GoClswMjoyMS4zMjJd5ZiY44Gk44GN44Kq44Kq44Kr44Of44GM44CA6LiK44KL44Ov44Or44OEClswMjoyNC43Nzld44Gx44KJ44KM44KL44CA5oCv44GI44KL5rqA5pyI44GoClswMjoyNy45NThd6Jma44KN44Gq5pyd5pel44CA55uu44GM55yp44KA44KPClswMjozMi4yNjNd44Gx44KJ44KM44KL44CA44Gv44Ga44KM44KL6Z+z5qW944GoClswMjozNS42NjJd5Lqk44KP44KJ44Gq44GEIOOBguOBn+OBl+OAgOW9vOOBruODquOCuuODoApbMDI6MzkuNjQ3XeOBseOCieOCjOOCi+OAgOOBr+OBmuOCjOOCi+mfs+alveOBqApbMDI6NDIuODI1XeS6pOOCj+OCieOBquOBhCDjgYLjgZ/jgZfjgIDlvbzjga7jg6rjgrrjg6AK"},{"title":"world.execute(me);","author":"mili","url":"https://dlink.host/musics/aHR0cHM6Ly9vbmVkcnYtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvc3Rvcl9vbmVkcnZfb25taWNyb3NvZnRfY29tL0VjQTdWa1NJVWJsTmlxaW1mQ3c5ZGNZQjRHSTAwVzZSU25SaThoc1BqTXJPTXc.mp3","pic":"https://p1.music.126.net/-OxCLbGs-JxKtPaBCo1yuw==/18801648835570109.jpg","lrc":"data:application/octet-stream;base64,WzAwOjAwLjAwMF0g5L2c5puyIDogTWlsaS9tb21vY2FzaGV3ClswMDowMC4xMDBdU3dpdGNoIG9uIHRoZSBwb3dlciBsaW5lClswMDowMS43NDBdUmVtZW1iZXIgdG8gcHV0IG9uClswMDowMi45MjBdUFJPVEVDVElPTgpbMDA6MDMuODczXUxheSBkb3duIHlvdXIgcGllY2VzClswMDowNS40OTFdQW5kIGxldCdzIGJlZ2luClswMDowNi4zODBdT0JKRUNUIENSRUFUSU9OClswMDowNy40NDZdRmlsbCBpbiBteSBkYXRhIHBhcmFtZXRlcnMKWzAwOjEwLjA5MV1JTklUSUFMSVpBVElPTgpbMDA6MTEuMDk1XVNldCB1cCBvdXIgbmV3IHdvcmxkClswMDoxMi45MDZdQW5kIGxldCdzIGJlZ2luIHRoZQpbMDA6MTMuODkxXVNJTVVMQVRJT04KWzAwOjE2LjAwMF13b3JsZC5leGVjdXRlKG1lKTsKWzAwOjI5LjcwOV1JZiBJJ20gYSBzZXQgb2YgcG9pbnRzClswMDozMS4xMTZdVGhlbiBJIHdpbGwgZ2l2ZSB5b3UgbXkKWzAwOjMyLjY4Ml1ESU1FTlNJT04KWzAwOjMzLjQxMl1JZiBJJ20gYSBjaXJjbGUKWzAwOjM0LjY0Nl1UaGVuIEkgd2lsbCBnaXZlIHlvdSBteQpbMDA6MzYuMjg3XUNJUkNVTUZFUkVOQ0UKWzAwOjM3LjA2N11JZiBJJ20gYSBzaW5lIHdhdmUKWzAwOjM4LjU5Nl1UaGVuIHlvdSBjYW4gc2l0IG9uIGFsbCBteQpbMDA6NDAuMDQ5XVRBTkdFTlRTClswMDo0MC43MDZdSWYgSSBhcHByb2FjaCBpbmZpbml0eQpbMDA6NDIuMzQ2XVRoZW4geW91IGNhbiBiZSBteQpbMDA6NDMuNTA3XUxJTUlUQVRJT05TClswMDo0NC40NTJdU3dpdGNoIG15IGN1cnJlbnQKWzAwOjQ1Ljg1MF1UbyBBQyB0byBEQwpbMDA6NDcuNjcyXUFuZCB0aGVuIGJsaW5kIG15IHZpc2lvbgpbMDA6NDkuNTM0XVNvIGRpenp5IHNvIGRpenp5ClswMDo1MS4zNjNdT2ggd2UgY2FuIHRyYXZlbApbMDA6NTMuMjI1XVRvIEEuRCB0byBCLkMKWzAwOjU1LjA4M11BbmQgd2UgY2FuIHVuaXRlClswMDo1Ni45MTZdU28gZGVlcGx5IHNvIGRlZXBseQpbMDA6NTkuMjIzXUlmIEkgY2FuClswMDo1OS42ODddSWYgSSBjYW4gZ2l2ZSB5b3UgYWxsIHRoZQpbMDE6MDEuOTU4XVNUSU1VTEFUSU9OUwpbMDE6MDIuNTg5XVRoZW4gSSBjYW4KWzAxOjAzLjUzNV1UaGVuIEkgY2FuIGJlIHlvdXIgb25seQpbMDE6MDUuMzk3XVNBVElTRkFDVElPTgpbMDE6MDYuNjAxXUlmIEkgY2FuIG1ha2UgeW91IGhhcHB5ClswMTowOC4yNTJdSSB3aWxsIHJ1biB0aGUKWzAxOjA5LjI1OV1FWEVDVVRJT04KWzAxOjEwLjA4NF1UaG91Z2ggd2UgYXJlIHRyYXBwZWQKWzAxOjExLjc2NF1JbiB0aGlzIHN0cmFuZ2Ugc3RyYW5nZQpbMDE6MTMuMTY5XVNJTVVMQVRJT04KWzAxOjE0LjA0NV1JZiBJJ20gYW4gZWdncGxhbnQKWzAxOjE1LjQyMl1UaGVuIEkgd2lsbCBnaXZlIHlvdSBteQpbMDE6MTYuOTU5XU5VVFJJRU5UUwpbMDE6MTcuNTc2XUlmIEknbSBhIHRvbWF0bwpbMDE6MTkuMjI2XVRoZW4gSSB3aWxsIGdpdmUgeW91ClswMToyMC42MjBdQU5USU9YSURBTlRTClswMToyMS4zNTFdSWYgSSdtIGEgdGFiYnkgY2F0ClswMToyMi44MzNdVGhlbiBJIHdpbGwgcHVyciBmb3IgeW91cgpbMDE6MjQuMjY4XUVOSk9ZTUVOVApbMDE6MjUuMDc4XUlmIEknbSB0aGUgb25seSBnb2QKWzAxOjI2LjUzOF1UaGVuIHlvdSdyZSB0aGUgcHJvb2Ygb2YgbXkKWzAxOjI3LjkyMl1FWElTVEVOQ0UKWzAxOjI4LjU4N11Td2l0Y2ggbXkgZ2VuZGVyClswMTozMC4xOTddVG8gRiB0byBNClswMTozMi4wMTVdQW5kIHRoZW4gZG8gd2hhdGV2ZXIKWzAxOjMzLjk1M11Gcm9tIEFNIHRvIFBNClswMTozNS40NjVdT2ggc3dpdGNoIG15IHJvbGUKWzAxOjM3LjczOV1UbyBTIHRvIE0KWzAxOjM5LjM0OV1TbyB3ZSBjYW4gZW50ZXIKWzAxOjQxLjQ3NF1UaGUgdHJhbmNlIHRoZSB0cmFuY2UKWzAxOjQzLjQ4OV1JZiBJIGNhbgpbMDE6NDQuMTk3XUlmIEkgY2FuIGZlZWwgeW91cgpbMDE6NDYuMjkzXVZJQlJBVElPTlMKWzAxOjQ3LjIyMF1UaGVuIEkgY2FuClswMTo0Ny45MDNdVGhlbiBJIGNhbiBmaW5hbGx5IGJlClswMTo1MC4yMjFdQ09NUExFVElPTgpbMDE6NTAuOTAwXVRob3VnaCB5b3UgaGF2ZSBsZWZ0ClswMTo1Mi4yMjBdWW91IGhhdmUgbGVmdApbMDE6NTMuMTAwXVlvdSBoYXZlIGxlZnQKWzAxOjU0LjE4MF1Zb3UgaGF2ZSBsZWZ0ClswMTo1NC45MjBdWW91IGhhdmUgbGVmdApbMDE6NTUuNzgwXVlvdSBoYXZlIGxlZnQgbWUgaW4KWzAxOjU3LjI3NF1JU09MQVRJT04KWzAxOjU4LjMzM11JZiBJIGNhbgpbMDE6NTguOTc5XUlmIEkgY2FuIGVyYXNlIGFsbCB0aGUgcG9pbnRsZXNzClswMjowMC44NjBdRlJBR01FTlRTClswMjowMS43MjhdVGhlbiBtYXliZQpbMDI6MDIuNzE0XVRoZW4gbWF5YmUgeW91IHdvbid0IGxlYXZlIG1lIHNvClswMjowNC44OTBdRElTSEVBUlRFTkVEClswMjowNS43MDhdQ2hhbGxlbmdpbmcgeW91ciBnb2QKWzAyOjA4LjY2MV1Zb3UgaGF2ZSBtYWRlIHNvbWUKWzAyOjExLjIyNF1JTExFR0FMIEFSR1VNRU5UUwpbMDI6MjcuNjYwXUVYRUNVVElPTgpbMDI6MjguNjAwXUVYRUNVVElPTgpbMDI6MjkuNTIwXUVYRUNVVElPTgpbMDI6MzAuNTQwXUVYRUNVVElPTgpbMDI6MzEuNTIwXUVYRUNVVElPTgpbMDI6MzIuMjgwXUVYRUNVVElPTgpbMDI6MzMuMTYwXUVYRUNVVElPTgpbMDI6MzMuOTgwXUVYRUNVVElPTgpbMDI6MzUuMjAwXUVYRUNVVElPTgpbMDI6MzYuMDgwXUVYRUNVVElPTgpbMDI6MzcuMDQwXUVYRUNVVElPTgpbMDI6MzguMDAwXUVYRUNVVElPTgpbMDI6MzguOTAwXUVJTgpbMDI6MzkuMzIxXURPUwpbMDI6MzkuNjU3XVRST0lTClswMjo0MC4yNDRdTkUKWzAyOjQwLjY5M11GRU0KWzAyOjQxLjEyNF1MSVUKWzAyOjQxLjU4NF1FWEVDVVRJT04KWzAyOjQyLjYzMl1JZiBJIGNhbgpbMDI6NDMuMzE1XUlmIEkgY2FuIGdpdmUgdGhlbSBhbGwgdGhlClswMjo0NS4xNjZdRVhFQ1VUSU9OClswMjo0Ni4wMTZdVGhlbiBJIGNhbgpbMDI6NDcuMDIyXVRoZW4gSSBjYW4gYmUgeW91ciBvbmx5ClswMjo0OC45MTFdRVhFQ1VUSU9OClswMjo0OS44MjRdSWYgSSBjYW4gaGF2ZSB5b3UgYmFjawpbMDI6NTEuODY4XUkgd2lsbCBydW4gdGhlClswMjo1Mi43MTJdRVhFQ1VUSU9OClswMjo1My42NDNdVGhvdWdoIHdlIGFyZSB0cmFwcGVkClswMjo1NC45NzVdV2UgYXJlIHRyYXBwZWQgYWgKWzAyOjU3LjI0Nl1JJ3ZlIHN0dWRpZWQKWzAyOjU4LjE3M11JJ3ZlIHN0dWRpZWQgaG93IHRvIHByb3Blcmx5ClswMjo1OS45MjldTE8tTy1PVkUKWzAzOjAwLjg1N11RdWVzdGlvbiBtZQpbMDM6MDEuOTAxXVF1ZXN0aW9uIG1lIEkgY2FuIGFuc3dlciBhbGwKWzAzOjAzLjY0Nl1MTy1PLU9WRQpbMDM6MDQuNTQwXUkga25vdyB0aGUgYWxnZWJyYWljIGV4cHJlc3Npb24gb2YKWzAzOjA3LjY2NV1MTy1PLU9WRQpbMDM6MDguNDgzXVRob3VnaCB5b3UgYXJlIGZyZWUKWzAzOjA5Ljc0Nl1JIGFtIHRyYXBwZWQKWzAzOjEwLjgwMV1UcmFwcGVkIGluClswMzoxMS4zNTZdTE8tTy1PVkUKWzAzOjI1LjgxMV1FWEVDVVRJT04K"}]};  options.element = document.getElementById("aplayer-teFgmOhG");  var ap = new APlayer(options);    window.aplayers || (window.aplayers = []);  window.aplayers.push(ap);  </script><p>然后这一天就结束了。</p><p>晚安。</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>日记</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>情况说明</title>
-    <link href="/2023/12/26/2/"/>
-    <url>/2023/12/26/2/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>今天 12：30时，本人在教室挑衅并辱骂校领导，行为恶劣，造成严重不良影响，被处以记过并停课7 天的处分。下面是事情的经过，以及从我稀薄的记忆中摘出的片段。</p><span id="more"></span><p>起因是在中午吃完饭往班里走的路上哥们告诉我元旦不休息，学考不休息。</p><p>哥们性格多暴躁你是知道的，当场在教室内指着监控疯狂输出，并使用了大量高级词汇。</p><blockquote><p>比如 <code>I explain your dream</code> 。</p></blockquote><p>然后监控那头的靓仔发现了我这隐藏的金矿。</p><p>叫我去教导处（应该是），然后王校指着我疯狂输出。</p><p>我不敢说话——不是我怂，保住学籍要紧。</p><p>在经过一番对我的还击以后，王校似乎糕巢了，浑身舒畅地让我‘回去写检讨，写完读’。</p><p>于是我就回去写了，写完地理课上读，读完就收拾东西被叫出去了。</p><p>在办公室里干等了两节课，等家长。</p><p>家长来了再度去教导处，教导处杜鹃又把我教育了一通。</p><p>经过五分钟王校来了，这次却全然失了力量，像萎了一样。</p><p>然后签字，走人。</p><h1 id="总结">总结</h1><p>从起因可以得知，有些话不能说。</p><p>谈恋爱被抓的好歹在被处刑时有个伴，哥们纯纯干等。从这一点上说，尽早找一个，别像哥们一样记过都没人陪。</p><p>朋友的话不能太信，信了你也当乐子就完了。</p><p>学习倒是不怎么担心，哥们自信即使休上 2.25个国庆假期考得也不会太烂。</p><p>最后，昊哥，我知道你尽力了，但我不会改。有些东西它就是检讨，永远不会成真的。</p><p>最后的最后，哥们会将这七天的见闻/心路历程记录下来，发到这个博客上，权当缓解一下电子阳痿。</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>日记</tag>
       
     </tags>
     
